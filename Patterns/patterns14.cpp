@@ -1,6 +1,12 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+// A
+// AB
+// ABC
+// ABCD
+// ABCDE
+
 int main()
 {
     int n;

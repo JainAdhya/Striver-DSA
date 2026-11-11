@@ -2,7 +2,7 @@
 using namespace std;
 
 //Solution 1
-bool isPerfect(int n) {
+bool isPerfect1(int n) {
     int count=1;
     for(int i=2;i<n;i++){
         if(n%i==0){
@@ -13,7 +13,7 @@ bool isPerfect(int n) {
 }
 
 //Solution 2
-bool isPerfect(int n) {
+bool isPerfect2(int n) {
     int count=1;
     for(int i=2;i*i<n;i++){
         if(n%i==0){
@@ -29,6 +29,6 @@ int main()
     int n;
     cin >> n;
 
-    bool res = isPerfect(n);
+    bool res = isPerfect2(n);
     cout << res; 
 }

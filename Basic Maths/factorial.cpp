@@ -2,16 +2,16 @@
 using namespace std;
 
 //Solution 1
-int factorial(int n) {
+int factorial1(int n) {
     if(n==0 || n==1){
         return 1;
     }
-    return n*factorial(n-1);
+    return n*factorial1(n-1);
     
 }
 
 //Solution 2
-int factorial(int n) {
+int factorial2(int n) {
     if(n==0 || n==1){
         return 1;
     }
@@ -27,6 +27,6 @@ int main()
     int n;
     cin >> n;
 
-    int res = factorial(n);
+    int res = factorial2(n);
     cout << res; 
 }

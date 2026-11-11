@@ -13,10 +13,10 @@ string largeOddNum(string& s){
         {
             last--;
         }
-        return s.substr(start,last+1);
+        return s.substr(start,last-start+1);
 }
 
 int main() {
-    string str = "5347";
+    string str = "0214638";
     cout << largeOddNum(str);
 }

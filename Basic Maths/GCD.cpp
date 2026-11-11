@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int GCD(int n1, int n2) {
+int GCD1(int n1, int n2) {
     int n = min(n1, n2);
     int gcd = 1;
 
@@ -14,7 +14,7 @@ int GCD(int n1, int n2) {
     return gcd;
 }
 
-int GCD(int n1, int n2) {
+int GCD2(int n1, int n2) {
     int n = min(n1, n2);
     int gcd = 1;
 
@@ -23,9 +23,10 @@ int GCD(int n1, int n2) {
             return i;
         }
     }
+    return gcd;
 }
 
-int GCD(int n1, int n2) {
+int GCD3(int n1, int n2) {
     while(n1!=0 && n2!=0){
         if(n1>n2){
             n1=n1-n2;
@@ -39,7 +40,7 @@ int GCD(int n1, int n2) {
     return n1;
 }
 
-int GCD(int n1, int n2) {
+int GCD4(int n1, int n2) {
     while(n1!=0 && n2!=0){
         if(n1>n2){
             n1=n1%n2;
@@ -59,6 +60,6 @@ int main() {
     int n1, n2;
     cin >> n1 >> n2;
 
-    int res = GCD(n1, n2);
+    int res = GCD4(n1, n2);
     cout << res;
 }

@@ -1,6 +1,12 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+// 1
+// 22
+// 333
+// 4444
+// 55555
+
 int main()
 {
     int n;

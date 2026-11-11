@@ -1,6 +1,12 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+// E 
+// D E 
+// C D E 
+// B C D E 
+// A B C D E
+
 int main()
 {
     int n;

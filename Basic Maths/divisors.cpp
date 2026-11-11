@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-vector<int> divisors(int n) {
+vector<int> divisors1(int n) {
     vector<int> ans;
     for(int i=1;i<=n;i++){
         if(n%i==0){
@@ -11,7 +11,7 @@ vector<int> divisors(int n) {
     return ans;
 }
 
-vector<int> divisors(int n) {
+vector<int> divisors2(int n) {
     vector<int> ans;
     for(int i=1;i<=sqrt(n);i++){
         if(n%i==0){
@@ -29,7 +29,7 @@ int main() {
     int n;
     cin >> n;
 
-    vector<int> res = divisors(n);
+    vector<int> res = divisors2(n);
     for(int i=0;i<res.size();i++){
         cout << res[i];
     }

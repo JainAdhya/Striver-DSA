@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int mostFrequentElement(vector<int>& nums) {
+int mostFrequentElement1(vector<int>& nums) {
     map<int,int> hash;
     for(int i=0;i<nums.size();i++){
         auto it=hash.find(nums[i]);
@@ -24,6 +24,6 @@ int mostFrequentElement(vector<int>& nums) {
 
 int main() {
     vector<int> arr={1, 2, 2, 3, 3, 3};
-    int ans= mostFrequentElement(arr);
+    int ans= mostFrequentElement2(arr);
     cout << ans;
 }

@@ -2,7 +2,7 @@
 using namespace std;
 
 //Solution 1
-int countDigit(int n) {
+int countDigit1(int n) {
     if(n==0){
         return 1;
     }
@@ -15,7 +15,7 @@ int countDigit(int n) {
 }
 
 //Solution 2
-int countDigit(int n) {
+int countDigit2(int n) {
     if(n==0){
         return 1;
     }
@@ -27,6 +27,6 @@ int main()
     int n;
     cin >> n;
 
-    int res = countDigit(n);
+    int res = countDigit2(n);
     cout << res; 
 }
